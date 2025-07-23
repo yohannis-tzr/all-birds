@@ -202,7 +202,7 @@ nav{
     text-align: center;
 }
 .blue-text{
-    position: absolute;
+    position: absolute; 
     top: 5%;
     color: white;
     padding: 20px;
