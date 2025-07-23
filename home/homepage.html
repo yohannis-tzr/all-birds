@@ -20,14 +20,18 @@
                 <a href=""><img src="center.png" height="40px" id="center-img"></a>
             </div>
             <div class="right-div">
-                <a href="" id="stores" class="right-nav-text"><b>STORES</b></a>
-                <a href="" id="return" class="right-nav-text"><b>RETURN</b></a>
-                <a href="" id="sustainability" class="right-nav-text"><b>SUSTAINABILITY</b></a>
-                <a href=""><img src="search.svg" alt="" class="right-nav"/></a>
-                <a href=""><img src="user.svg" alt="" class="right-nav" /></a>
-                <a href=""><img src="question.svg" alt="" class="right-nav"/></a>
-                <a href=""><img src="cart.svg" alt="" class="right-nav"/></a>
+                <a href="" id="hide" class="right-nav-text"><b>STORES</b></a>
+                <a href="" id="hide" class="right-nav-text"><b>RETURN</b></a>
+                <a href="" id="hide" class="right-nav-text"><b>SUSTAINABILITY</b></a>
+                <a href="" id="hide"><img src="search.svg" alt="" class="right-nav"/></a>
+                <a href="" id="hide"><img src="user.svg" alt="" class="right-nav" /></a>
+                <a href="" id="hide"><img src="question.svg" alt="" class="right-nav"/></a>
+                <a href="" id="hide"><img src="cart.svg" alt="" class="right-nav"/></a>
+                <a href="#" class="ico" id="min"><li onclick=showSidebar()> <img src="menu-svgrepo-com.svg" alt="" height="25px" width="25px"></li></a>
+
             </div>
+
+            
         </nav>
 
         <div class="tuck">
@@ -36,6 +40,32 @@
                 <a href="" class="shoes">Women'sShoes</a>
                 <a href="" class="shoes">NewArrivals</a>
             </div>
+            
+
+                <ul class="side-bar">
+                    <li onclick= hideSidebar()><a href="#"><img src="x.svg" alt="" height="25px" width="25px"></a></li>
+                    <li><a href="" ><b>MEN</b></a></li>
+                    <li><a href="" ><b>WOMEN</b></a></li>
+                    <li><a href="" ><b>SOCKS</b></a></li>
+                    <li><a href="" ><b>SALE</b></a></li>
+                    <li><a href="" ><b>STORES</b></a></li>
+                    <li><a href="" ><b>RETURN</b></a></li>
+                    <li><a href="" ><b>SUSTAINABILITY</b></a></li>
+                    <li><a href=""><img src="search.svg" alt="" class="right-nav"/></a></li>
+                    <li><a href=""><img src="user.svg" alt="" class="right-nav" /></a></li>
+                    <li><a href=""><img src="question.svg" alt="" class="right-nav"/></a></li>
+                    <li><a href=""><img src="cart.svg" alt="" class="right-nav"/></a></li>
+                </ul>
+                <script>
+                            function showSidebar() {
+                                const sidebar = document.querySelector('.side-bar');
+                                sidebar.style.display = 'flex'
+                            }
+                            function hideSidebar() {
+                                const sidebar = document.querySelector('.side-bar');
+                                sidebar.style.display = 'none'
+                            }
+                </script>
         </div>
 
 
@@ -172,8 +202,14 @@
     </ul>
            </div>
         </footer>
+
+                <script>
+                            function showSidebar() {
+                                const sidebar = document.querySelector('.side-bar');
+                                sidebar.style.display = 'flex'
+                            }
+                </script>
     </body>
 </html>
 
 
-hh
